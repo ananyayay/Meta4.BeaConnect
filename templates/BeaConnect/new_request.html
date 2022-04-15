@@ -1,0 +1,25 @@
+<html>
+	<body>
+	{% load static %}
+		<textarea style="width: 700px; height: 700px", id="request_info">Enter Request JSON here</textarea>
+		<br/>
+		<button onclick='submit_form()'>
+			Submit
+		</button>
+
+		<script type='text/javascript'>
+			function submit_form(){
+				query = document.querySelector('#request_info').value;
+				fetch('add_request',{
+					method: 'POST',
+					headers: {
+							'X-CSRFToken': '{{ csrf_token }}',
+					},
+					body: JSON.stringify(JSON.parse(query))
+				}).then(response => {
+					alert(response)
+				});
+			}
+		</script>
+	</body>
+</html>
