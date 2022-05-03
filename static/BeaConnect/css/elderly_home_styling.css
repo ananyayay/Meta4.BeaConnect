@@ -3,6 +3,7 @@
     background-color: #FEAB41;
     border: #000000;
     height: 100px;
+    width: 100vw;
 }
 
 .navitem
@@ -20,7 +21,7 @@
 .navitem:hover
 {
     box-shadow: 2px 2px 6px 0px #802D1B;
-    background-color: white;
+    background-color: #fce2a1;
 }
 
 .navpar
@@ -71,6 +72,7 @@
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* text-align: center; */
+    transition: all 0.2s;
 }
 
 .banner:hover
@@ -83,7 +85,7 @@
 {
     position: relative;
     height: 230px;
-    width: 500px;
+    width: 450px;
     border-radius: 25px;
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
 }
@@ -92,10 +94,10 @@
 {
     position: relative;
     height: 230px;
-    width: 500px;
+    width: 450px;
     border-radius: 25px;
     /* right: 0px; */
-    left: 1215px;
+    left: 1265px;
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
 }
 

@@ -1,1 +1,90 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type='text/css' href='../../static/BeaConnect/css/call_volunteer_styling.css'>
+        <title>BeaConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="../../media/beaconnect_temp_logo.png" height="80" alt="BeaConnect"/>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/history.png" height="30" alt="History"/>
+                            <p class="navpar">History</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/messages.png" height="25" alt="Messages"/>
+                            <p class="navpar">Messages</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/profile.png" height="30" alt="Profile"/>
+                            <p class="navpar">My Profile</p>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="welcomediv">
+            <p id="welcome">Call a volunteer for help, or a talk over tea and snacks!</p>
+        </div>
+        <div class="box">
+            <div class="fitem1">
+                <p class="heading">
+                    Recent:
+                </p>
+                <div class="recent">
+                    Walk my dog
+                </div>
+                <div class="recent">
+                    Read to me
+                </div>
+                <div class="recent">
+                    Share a meal
+                </div>
+            </div>
+            <div class="fitem2">
+                <p class="heading">
+                    Suggested:
+                </p>
+                <div class="suggested">
+                    Get groceries
+                </div>
+                <div class="suggested">
+                    Get medicine
+                </div>
+                <div class="suggested">
+                    A walk
+                </div>
+                <div class="suggested">
+                    Casual interaction
+                </div>
+            </div>
+            <div class="fitem3">
+                <p class="heading">
+                    Enter your request:
+                </p>
+                <form>
+                    <textarea rows="4" cols="40" name="request" id="request" placeholder="Enter your request here"></textarea>
+                    <input type="submit" name="submit" id="submit" value="Submit"/>
+                </form>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+    </body>
+</html>
