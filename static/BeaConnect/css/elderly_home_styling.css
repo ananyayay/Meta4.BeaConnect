@@ -14,6 +14,13 @@
     border-radius: 40px;
     text-align: center;
     /* padding-top: 8px; */
+    transition: all 0.2s;
+}
+
+.navitem:hover
+{
+    box-shadow: 2px 2px 6px 0px #802D1B;
+    background-color: white;
 }
 
 .navpar
@@ -32,4 +39,260 @@
 {
     top: 5px;
     position: relative;
+}
+
+.welcomediv
+{
+    /* background-color: #902424; */
+    height: 60px;
+}
+
+#welcome
+{
+    font-family: 'PT Sans';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 40px;
+    position: relative;
+    left: 40px;
+    top: 12px;
+    color: #802D1B;
+}
+
+.banner
+{
+    background-color: #E4674B;
+    height: 230px;
+    width: 1715px;
+    border-radius: 25px;
+    margin-top: 23px;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-align: center; */
+}
+
+.banner:hover
+{
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    background-color: #c25036;
+}
+
+.leftpics
+{
+    position: relative;
+    height: 230px;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rightpics
+{
+    position: relative;
+    height: 230px;
+    width: 500px;
+    border-radius: 25px;
+    /* right: 0px; */
+    left: 1215px;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titlecontent2
+{
+    /* display: inline; */
+    /* background-color: #FEAB41; */
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    bottom: 130px;
+    left: 470px;
+}
+.subtitlecontent2
+{
+    /* display: inline; */
+    position: absolute;
+    height: 50px;
+    width: 350px;
+    bottom: 60px;
+    left: 450px;
+}
+.titleheading2
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.subtitle2
+{
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.titlecontent1
+{
+    /* display: inline; */
+    /* background-color: #FEAB41; */
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    bottom: 130px;
+    left: 930px;
+}
+.subtitlecontent1
+{
+    /* display: inline; */
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    bottom: 60px;
+    left: 780px;
+}
+.titleheading1
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.subtitle1
+{
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.titlecontent3
+{
+    /* display: inline; */
+    /* background-color: #FEAB41; */
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    bottom: 130px;
+    left: 860px;
+}
+.subtitlecontent3
+{
+    /* display: inline; */
+    position: absolute;
+    height: 50px;
+    width: 700px;
+    bottom: 60px;
+    left: 760px;
+}
+.titleheading3
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.subtitle3
+{
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
 }
