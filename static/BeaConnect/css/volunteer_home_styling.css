@@ -1,0 +1,264 @@
+.navbar
+{
+    background-color: #FEAB41;
+    border: #000000;
+    height: 100px;
+    width: 100vw;
+}
+
+.navitem
+{
+    background-color: #FFEDBF;
+    width: 160px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 40px;
+    text-align: center;
+    /* padding-top: 8px; */
+    transition: all 0.2s;
+}
+
+.navitem:hover
+{
+    box-shadow: 2px 2px 6px 0px #802D1B;
+    background-color: #fce2a1;
+}
+
+.navpar
+{
+    font-family: 'PT Sans';
+    color: #802D1B;
+    font-size: 20px;
+    left: 6px;
+    padding-top: 3px;
+    top: 8px;
+    display: inline;
+    position: relative;
+}
+
+.img
+{
+    top: 5px;
+    position: relative;
+}
+
+.welcomediv
+{
+    /* background-color: #902424; */
+    height: 60px;
+}
+
+#welcome
+{
+    font-family: 'PT Sans';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 40px;
+    position: relative;
+    left: 40px;
+    top: 25px;
+    color: #802D1B;
+}
+
+.banner
+{
+    background-color: #E4674B;
+    height: 230px;
+    width: 1715px;
+    border-radius: 25px;
+    margin-top: 50px;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-align: center; */
+    transition: all 0.2s;
+}
+
+.banner:hover
+{
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    background-color: #c25036;
+}
+
+.leftpics
+{
+    position: relative;
+    height: 230px;
+    width: 450px;
+    border-radius: 25px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rightpics
+{
+    position: relative;
+    height: 230px;
+    width: 450px;
+    border-radius: 25px;
+    /* right: 0px; */
+    left: 1265px;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titlecontent2
+{
+    /* display: inline; */
+    /* background-color: #FEAB41; */
+    position: absolute;
+    height: 50px;
+    width: 400px;
+    bottom: 130px;
+    left: 450px;
+}
+.subtitlecontent2
+{
+    /* display: inline; */
+    position: absolute;
+    height: 50px;
+    width: 750px;
+    bottom: 60px;
+    left: 280px;
+}
+.titleheading2
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.subtitle2
+{
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.titlecontent1
+{
+    /* display: inline; */
+    /* background-color: #FEAB41; */
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    bottom: 130px;
+    left: 920px;
+}
+.subtitlecontent1
+{
+    /* display: inline; */
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    bottom: 60px;
+    left: 770px;
+}
+.titleheading1
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+.subtitle1
+{
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+    position: relative;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 200px; */
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: inline; */
+    /* left: 200px;
+    top: 50px; */
+    /* background-color: #802D1B; */
+    /* height: 100px; */
+}
+
+#good
+{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    background-color: #FEAB41;
+    border-radius: 10px;
+    left: 1555px;
+    top: 120px;
+    text-align: center;
+}
+
+#goodwillpoints
+{
+    font-family: 'PT Sans';
+    font-size: 25px;
+    color: #802D1B;
+    top: 3px;
+    position: relative;
+}
+
+#points
+{
+    font-family: 'PT Sans';
+    font-size: 25px;
+    color: #802D1B;
+    position: relative;
+    bottom: 20px;
+}
