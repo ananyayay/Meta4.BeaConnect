@@ -60,7 +60,7 @@
     background-color: transparent;
     margin-right: 50px;
     height: 550px;
-    margin-left: 170px;
+    margin-left: 100px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -162,15 +162,15 @@
     font-family: 'PT Sans';
     font-size: 25px;
     margin-left: 25px;
-    top: 20px;
+    top: 30px;
 }
 
 #comments
 {
-    width: 645px;
+    width: 685px;
     height: 210px;
     margin-left: 25px;
-    margin-top: 40px;
+    margin-top: 50px;
     padding-left: 13px;
     padding-top: 10px;
     border-radius: 20px;
@@ -193,8 +193,8 @@
     font-family: 'PT Sans';
     font-size: 23px;
     position: relative;
-    top: 20px;
-    left: 530px;
+    top: 25px;
+    left: 570px;
     transition: all 0.2s;
 }
 
@@ -211,7 +211,7 @@
     position: relative;
     /* top: 20px; */
     left: 25px;
-    bottom: 40px;
+    bottom: 35px;
     display: inline;
     transition: all 0.2s;
 }
