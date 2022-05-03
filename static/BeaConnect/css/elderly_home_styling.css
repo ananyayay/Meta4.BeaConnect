@@ -4,3 +4,32 @@
     border: #000000;
     height: 100px;
 }
+
+.navitem
+{
+    background-color: #FFEDBF;
+    width: 160px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 40px;
+    text-align: center;
+    /* padding-top: 8px; */
+}
+
+.navpar
+{
+    font-family: 'PT Sans';
+    color: #802D1B;
+    font-size: 20px;
+    left: 6px;
+    padding-top: 3px;
+    top: 8px;
+    display: inline;
+    position: relative;
+}
+
+.img
+{
+    top: 5px;
+    position: relative;
+}
