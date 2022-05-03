@@ -162,6 +162,7 @@
 {
     background-color: white;
     color: #E4674B;
+    border: 1px solid #E4674B;
 }
 
 #request
@@ -192,6 +193,7 @@
     position: relative;
     top: 20px;
     left: 760px;
+    transition: all 0.2s;
 }
 
 #cancel
@@ -209,4 +211,18 @@
     left: 50px;
     bottom: 40px;
     display: inline;
+    transition: all 0.2s;
+}
+
+#cancel:hover
+{
+    background-color: #802D1B;
+    color: #E8BF81;
+}
+
+#submit:hover
+{
+    background-color: white;
+    border: 1px solid #E4674B;
+    color: #E4674B;
 }

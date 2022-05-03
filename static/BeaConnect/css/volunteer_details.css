@@ -1,0 +1,273 @@
+.navbar
+{
+    background-color: #FEAB41;
+    border: #000000;
+    height: 100px;
+    width: 100vw;
+}
+
+.navitem
+{
+    background-color: #FFEDBF;
+    width: 160px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 40px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.navitem:hover
+{
+    box-shadow: 2px 2px 6px 0px #802D1B;
+    background-color: #fce2a1;
+}
+
+.navpar
+{
+    font-family: 'PT Sans';
+    color: #802D1B;
+    font-size: 20px;
+    left: 6px;
+    padding-top: 3px;
+    top: 8px;
+    display: inline;
+    position: relative;
+}
+
+.img
+{
+    top: 5px;
+    position: relative;
+}
+
+.welcomediv
+{
+    /* background-color: #902424; */
+    height: 60px;
+    margin-top: 50px;
+}
+
+#welcome
+{
+    font-family: 'PT Sans';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 40px;
+    position: relative;
+    left: 40px;
+    top: 12px;
+    color: #802D1B;
+}
+
+.box
+{
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fitem1
+{
+    flex: 1;
+    background-color: transparent;
+    border: 3px solid #E8BF81;
+    margin-right: 50px;
+    /* width: 100px; */
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 30px;
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fitem2
+{
+    flex: 1;
+    background-color: transparent;
+    border: 3px solid #E8BF81;
+    margin-right: 50px;
+    /* width: 100px; */
+    height: 500px;
+    border-radius: 30px;
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fitem3
+{
+    flex: 1;
+    background-color: transparent;
+    border: 3px solid #E8BF81;
+    margin-right: 50px;
+    /* width: 100px; */
+    height: 500px;
+    border-radius: 30px;
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#vol_photo
+{
+    position: relative;
+    top: 40px;
+}
+
+#stars
+{
+    position: relative;
+    top: 50px;
+}
+
+#name
+{
+    font-family: 'PT Sans';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+    color: #802D1B;
+}
+
+#about
+{
+    font-family: 'PT Sans';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 25px;
+    position: relative;
+    top: 90px;
+}
+
+#map
+{
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    border: 1px solid #8c8c8c;
+}
+
+#track
+{   
+    position: relative;
+    top: 48px;
+    width: 140px;
+    height: 60px;
+    background-color: #E4674B;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-family: 'PT Sans';
+    font-size: 23px;
+    transition: all 0.2s;
+}
+
+#track:hover
+{
+    background-color: white;
+    color: #E4674B;
+    border: 1px solid #E4674B;
+}
+
+#data
+{
+    position: relative;
+    font-family: 'PT Sans';
+    font-size: 27px;
+    top: 20px;
+}
+
+#outercircle
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(20, 109, 12);
+    border-radius: 100px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+
+}
+
+#innercircle
+{
+    height: 170px;
+    width: 170px;
+    border-radius: 100px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+#time
+{
+    position: relative;
+    top: 17px;
+    font-family: 'PT Sans';
+    font-size: 100px;
+    line-height: 100px;
+    color: #802D1B;
+}
+
+#minutes
+{
+    position: relative;
+    top: 8px;
+    font-family: 'PT Sans';
+    font-size: 30px;
+    color: #802D1B;
+}
+
+#call
+{   
+    position: relative;
+    top: 48px;
+    width: 140px;
+    height: 60px;
+    background-color: rgb(20, 109, 12);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-family: 'PT Sans';
+    font-size: 23px;
+    transition: all 0.2s;
+}
+
+#call:hover
+{
+    background-color: white;
+    color: rgb(20, 109, 12);
+    border: 1px solid rgb(20, 109, 12);
+}
+
+#feedback
+{   
+    position: relative;
+    top: 80px;
+    width: 140px;
+    height: 60px;
+    background-color: #E4674B;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-family: 'PT Sans';
+    font-size: 23px;
+    transition: all 0.2s;
+}
+
+#feedback:hover
+{
+    background-color: white;
+    color: #E4674B;
+    border: 1px solid #E4674B;
+}
