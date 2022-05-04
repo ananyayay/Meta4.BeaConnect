@@ -1,4 +1,4 @@
 function volunteerPage()
 {
-    window.location.href="call_volunteer.html";
+    window.location.href="call_volunteer";
 }

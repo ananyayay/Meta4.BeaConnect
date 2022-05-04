@@ -1,4 +1,4 @@
 function cancelRequest()
 {
-    window.location.href = "elderly_home.html";
+    window.location.href = "elderly_home";
 }

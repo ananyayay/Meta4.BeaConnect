@@ -42,3 +42,21 @@ def view_table(request: HttpRequest, table_name: str) -> HttpResponse:
 @require_GET
 def new_request_page(request: HttpRequest) -> HttpResponse:
 	return render(request, "BeaConnect/new_request.html")
+
+def call_volunteer(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/call_volunteer.html")
+
+def elderly_home(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/elderly_home.html")
+
+def feedback(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/feedback.html")
+
+def requests(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/requests.html")
+
+def volunteer_details(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/volunteer_details.html")
+
+def volunteer_home(request: HttpRequest) -> HttpResponse:
+	return render(request, "BeaConnect/volunteer_home.html")
