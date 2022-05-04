@@ -74,6 +74,7 @@ class User(models.Model):
 	photograph = models.TextField()
 	age = models.IntegerField()
 	mail = models.TextField()
+	phone_number = models.CharField(max_length=10)
 	
 	class Meta:
 		db_table = 'User'

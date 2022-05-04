@@ -59,6 +59,14 @@
         </div>
         <script src="{% static 'BeaConnect/js/call_volunteer_code.js' %}"></script>
         <script type="text/javascript">
+            const ta = document.getElementById("user_request");
+            const arr_stuff = [...document.querySelectorAll(".suggested,.recent")];
+            arr_stuff.forEach(elem=>{
+            elem.addEventListener("click", function(){
+                ta.value = elem.innerHTML.trim();
+            })})
+
+
             function insert_request() {
                 const user_req = document.getElementById("user_request").value;
                 fetch('submit_request', {

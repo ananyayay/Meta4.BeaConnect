@@ -122,7 +122,8 @@ def elderly_details(request: HttpRequest, request_id: int) -> HttpResponse:
 		              "pfp": "BeaConnect/media/" + elderly_user.photograph,
 		              "name": elderly_user.username,
 		              "req_content": user_req.content,
-		              "bio": elderly_user.bio
+		              "bio": elderly_user.bio,
+		              "phone_num": elderly_user.phone_number
 	              }
 	              )
 
@@ -139,6 +140,7 @@ def volunteer_details(request: HttpRequest, request_id: int) -> HttpResponse:
 		              "pfp": "BeaConnect/media/" + volunteer_user.photograph,
 		              "name": volunteer_user.username,
 		              "about": volunteer_user.bio,
+		              "phone_num": volunteer_user.phone_number,
 	              }
 	              )
 
