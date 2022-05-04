@@ -32,6 +32,9 @@ def insert_request(request: HttpRequest) -> HttpResponse:
 def insert_feedback(request: HttpRequest) -> HttpResponse:
 	data = json.loads(request.body)
 	user_req = Request.objects.get(request_id=data["request_id"])
+	vol = Volunteer.objects.get(id=user_req.volunteer)
+	vol.score += 10
+	vol.save()
 	try:
 		toadd = VolunteerReview(volunteer_id=user_req.volunteer, elderly_id=user_req.requester,
 		                        review_contents=data["feedback"], star_rating=3)
@@ -146,7 +149,12 @@ def volunteer_details(request: HttpRequest, request_id: int) -> HttpResponse:
 
 @require_GET
 def volunteer_home(request: HttpRequest) -> HttpResponse:
-	return render(request, "BeaConnect/volunteer_home.html")
+	volunteer_ID = None
+	volunteer_ID = 102  # STUB
+	vln = Volunteer.objects.get(id=volunteer_ID)
+	vln_usr = User.objects.get(id=volunteer_ID)
+	
+	return render(request, "BeaConnect/volunteer_home.html", {"name": vln_usr.username, "score": vln.score})
 
 @require_GET
 def appreciation(request: HttpRequest) -> HttpResponse:

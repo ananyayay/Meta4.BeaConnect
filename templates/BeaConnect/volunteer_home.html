@@ -12,11 +12,11 @@
     <body>
     {% include "BeaConnect/navbar.html" %}
         <div class="welcomediv">
-            <p id="welcome">Welcome, Rajesh!</p>
+            <p id="welcome">Welcome, {{ name }}</p>
         </div>
         <div id="good">
             <p id="goodwillpoints">Goodwill Points</p>
-            <p id="points"><b>170</b></p>
+            <p id="points"><b>{{ score }}</b></p>
         </div>
         <!-- first div -->
         <div class="banner" id = "banner1" onclick="window.location.href='requests'">
