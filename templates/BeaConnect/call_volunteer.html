@@ -50,13 +50,32 @@
                 <p class="heading">
                     Enter your request:
                 </p>
-                <form>
-                    <textarea rows="4" cols="40" name="request" id="request" placeholder="Enter your request here"></textarea>
-                    <input type="submit" name="submit" id="submit" value="Submit"/>
-                </form>
+                <div>
+                    <textarea rows="4" cols="40" name="request" id="user_request" placeholder="Enter your request here"></textarea>
+                    <input type="button" name="submit" onclick="insert_request()" id="submit" value="Submit"/>
+                </div>
                 <button id="cancel" onclick="cancelRequest()">Cancel</button>
             </div>
         </div>
         <script src="{% static 'BeaConnect/js/call_volunteer_code.js' %}"></script>
+        <script type="text/javascript">
+            function insert_request() {
+                const user_req = document.getElementById("user_request").value;
+                fetch('submit_request', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': '{{ csrf_token }}',
+                    },
+                    body: JSON.stringify({'req_content':user_req, 'category':'None'})
+                })
+                    .then((response) => {
+                        if (!response.ok){
+                            alert("Something really weird happened.")
+                        } else if (response.redirected){
+                            window.location.href=response.url;
+                        }
+                    })
+            }
+        </script>
     </body>
 </html>

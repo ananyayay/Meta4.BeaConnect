@@ -24,10 +24,13 @@ urlpatterns = [
 	path('new_request', views.new_request_page),
 	
 	path('call_volunteer', views.call_volunteer),
-	path('elderly_home', views.elderly_home),
-	path('feedback', views.feedback),
+	path('elderly_details', views.elderly_details),
+	path('elderly_home', views.elderly_home, name="elderly_home"),
+	path('submit_request', views.insert_request),
+	path('feedback/<int:request_id>', views.feedback),
+	path('submit_feedback', views.insert_feedback),
 	path('requests', views.requests),
-	path('volunteer_details', views.volunteer_details),
+	path('volunteer_details/<int:request_id>', views.volunteer_details),
 	path('volunteer_home', views.volunteer_home),
-
+	path('appreciation', views.appreciation),
 ]

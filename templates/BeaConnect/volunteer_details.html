@@ -12,16 +12,16 @@
     <body>
         {% include 'BeaConnect/navbar.html' %}
         <div class="welcomediv">
-            <p id="welcome"><span id="vol_name">Rajesh Gupta</span> has accepted your request!</p>
+            <p id="welcome"><span id="vol_name">{{ name }}</span> has accepted your request!</p>
         </div>
         <div class="box">
             <div class="fitem1">
-                <img id="vol_photo" src="{% static 'BeaConnect/media/rajesh.png' %}" height="150" alt="Volunteer Photo"/>
+                <img id="vol_photo" src="{% static pfp %}" height="150" alt="Volunteer Photo"/>
                 <br/>
                 <img id="stars" src="{% static 'BeaConnect/media/stars.png' %}" height="30" alt="Rating"/>
                 <br/>
-                <span id="name">Rajesh Gupta</span>
-                <p id="about"><b>About:</b> I've spent my whole<br> life in my room. Now I want<br> to see the world.</p>
+                <span id="name">{{ name }}</span>
+                <p id="about"><b>About:</b> {{ about }}</p>
             </div>
             <div class="fitem2">
                 <img id="map" src="{% static 'BeaConnect/media/map.png' %}" height="360" alt="Map"/>
@@ -37,7 +37,7 @@
                 </div>
                 <button id="call">Call</button>
                 <br>
-                <button id="feedback" onclick="showFeedback()">Feedback</button>
+                <button id="feedback" onclick="window.location.href='../feedback/{{ request_id }}'">Feedback</button>
             </div>
         </div>
         <script src="{% static 'BeaConnect/js/volunteer_details.js' %}"></script>

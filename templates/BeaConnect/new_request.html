@@ -3,12 +3,12 @@
 	{% load static %}
 		<textarea style="width: 700px; height: 700px", id="request_info">Enter Request JSON here</textarea>
 		<br/>
-		<button onclick='submit_form()'>
+		<button onclick='submit_stuff()'>
 			Submit
 		</button>
 
 		<script type='text/javascript'>
-			function submit_form(){
+			function submit_stuff(){
 				query = document.querySelector('#request_info').value;
 				fetch('add_request',{
 					method: 'POST',

@@ -14,9 +14,9 @@
         <div class="parent">
             <div class="left">
                 <div class="up">
-                    <img id="vol_photo" src="{% static 'BeaConnect/media/rajesh.png' %}" height="100" alt="Volunteer Photo"/>
-                    <p id="uptext">Your request: <br> <span id="request">“Please accompany me to go to Swati’s house to get the dholak.”</span> 
-                        <br>was just attended to by <span id="name">Rajesh Gupta</span>.
+                    <img id="vol_photo" src="{% static pfp %}" height="100" alt="Volunteer Photo"/>
+                    <p id="uptext">Your request: <br> <span id="request">{{ req_content }}</span>
+                        <br>was just attended to by <span id="name">{{ name }}</span>.
                     </p>
                 </div>
                 <div class="down">
@@ -36,10 +36,31 @@
                 <img id="stars" src="{% static 'BeaConnect/media/stars.png' %}" height="40" alt="Rating"/>
                 <label id="labelcomments" for="comment">Your comments:</label>
                 <textarea rows="4" cols="40" name="comments" id="comments" placeholder="Enter your comments here"></textarea>
-                <input type="submit" name="submit" id="submit" value="Submit"/>
+                <input type="button" onclick="submit_feedback()" name="submit" id="submit" value="Submit"/>
                 <button id="cancel" onclick="goToHome()">Cancel</button>
             </div>
         </div>
         <script src="{% static 'BeaConnect/js/feedback.js' %}"></script>
+        <script type="text/javascript">
+            function submit_feedback(){
+                const feedback = document.getElementById("comments").value;
+                const request_id = {{ request_id }};
+
+                fetch('../submit_feedback', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': '{{ csrf_token }}',
+                    },
+                    body: JSON.stringify({"feedback":feedback, "request_id": request_id})
+                })
+                    .then((response) => {
+                        if (!response.ok){
+                            alert("Something really weird happened.")
+                        } else if (response.redirected){
+                            window.location.href=response.url;
+                        }
+                    })
+            }
+        </script>
     </body>
 </html>

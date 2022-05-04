@@ -1,4 +1,4 @@
 function showFeedback()
 {
-    window.location.href = "feedback.html";
+    window.location.href = "../feedback";
 }

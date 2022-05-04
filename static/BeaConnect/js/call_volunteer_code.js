@@ -1,4 +1,3 @@
-function cancelRequest()
-{
+function cancelRequest() {
     window.location.href = "elderly_home";
 }

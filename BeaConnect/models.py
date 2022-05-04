@@ -71,7 +71,7 @@ class User(models.Model):
 	id = models.AutoField(db_column='ID', primary_key=True, default=-1)  # Field name made lowercase.
 	location = models.TextField()
 	bio = models.TextField()
-	photograph = models.ImageField(upload_to='user_dp/')
+	photograph = models.TextField()
 	age = models.IntegerField()
 	mail = models.TextField()
 	
@@ -88,7 +88,7 @@ class Volunteer(models.Model):
 		db_table = 'Volunteer'
 
 class VolunteerReview(models.Model):
-	surrogate_key = models.AutoField(db_column='ignore', primary_key=True, default=-1)
+	surrogate_key = models.AutoField(db_column='ignore', primary_key=True)
 	volunteer_id = models.IntegerField(db_column='volunteer_ID')  # Field name made lowercase.
 	elderly_id = models.IntegerField(db_column='elderly_ID')  # Field name made lowercase.
 	review_contents = models.TextField(blank=True, null=True)
@@ -96,4 +96,3 @@ class VolunteerReview(models.Model):
 	
 	class Meta:
 		db_table = 'Volunteer_Review'
-		unique_together = (('volunteer_id','elderly_id'))
