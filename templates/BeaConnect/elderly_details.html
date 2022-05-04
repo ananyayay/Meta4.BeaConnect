@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type='text/css' href='../../static/BeaConnect/css/elderly_details.css'>
+        <title>BeaConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="../../media/beaconnect_temp_logo.png" height="80" alt="BeaConnect"/>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/history.png" height="30" alt="History"/>
+                            <p class="navpar">History</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/messages.png" height="25" alt="Messages"/>
+                            <p class="navpar">Messages</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="navitem">
+                            <img class="img" src="../../media/profile.png" height="30" alt="Profile"/>
+                            <p class="navpar">My Profile</p>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="parent">
+            <div class="left">
+                <img id="eld_photo" src="../../media/elderlypfp1.png" height="150" alt="Volunteer Photo"/>
+                <br/>
+                <span id="displayname">Rekha Shukla</span>
+                <p id="about"><b>About:</b> "One who has born <br>has to die also. All I have is Krishna. Praising him is my<br> only job."</p>
+            </div>
+            <div class="right">
+                <div class="requestdiv">
+                    <p id="reqtitle">Request: </p>
+                    <p id="request">Please accompany me to Swati’s house to get the dholak</p>
+                </div>
+                <div id="address">
+                    <p id="awaitingpara"><span id="name">Rekha Shukla</span> awaits you at:</p>
+                    <p id="location">House 92/11, Vikas Nagar</p>
+                </div>
+                <button id="call">Call</button>
+                <button id="completed" onclick="workComplete()">Completed</button>
+            </div>
+        </div>
+    </body>
+</html>
