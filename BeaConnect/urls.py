@@ -23,8 +23,9 @@ urlpatterns = [
 	path('add_request', views.insert_request),
 	path('new_request', views.new_request_page),
 	
+	path('attend_to', views.attend_to),
 	path('call_volunteer', views.call_volunteer),
-	path('elderly_details', views.elderly_details),
+	path('elderly_details/<int:request_id>', views.elderly_details, name="elderly_details"),
 	path('elderly_home', views.elderly_home, name="elderly_home"),
 	path('submit_request', views.insert_request),
 	path('feedback/<int:request_id>', views.feedback),

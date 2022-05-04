@@ -13,22 +13,22 @@
     {% include 'BeaConnect/navbar.html' %}
         <div class="parent">
             <div class="left">
-                <img id="eld_photo" src="{% static 'BeaConnect/media/elderlypfp1.png' %}" height="150" alt="Volunteer Photo"/>
+                <img id="eld_photo" src="{% static pfp %}" height="150" alt="Volunteer Photo"/>
                 <br/>
-                <span id="displayname">Rekha Shukla</span>
-                <p id="about"><b>About:</b> "One who has born <br>has to die also. All I have is Krishna. Praising him is my<br> only job."</p>
+                <span id="displayname">{{ name }}</span>
+                <p id="about"><b>About:</b>{{ bio }}</p>
             </div>
             <div class="right">
                 <div class="requestdiv">
                     <p id="reqtitle">Request: </p>
-                    <p id="request">Please accompany me to Swati’s house to get the dholak</p>
+                    <p id="request">{{ req_content }}</p>
                 </div>
                 <div id="address">
-                    <p id="awaitingpara"><span id="name">Rekha Shukla</span> awaits you at:</p>
+                    <p id="awaitingpara"><span id="name">{{ name }}</span> awaits you at:</p>
                     <p id="location">House 92/11, Vikas Nagar</p>
                 </div>
                 <button id="call">Call</button>
-                <button id="completed" onclick="workComplete()">Completed</button>
+                <button id="completed" onclick="window.location.href='../volunteer_home'">Completed</button>
             </div>
         </div>
     </body>
