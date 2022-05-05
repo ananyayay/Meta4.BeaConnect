@@ -13,14 +13,14 @@
     {% include "BeaConnect/navbar.html" %}
         <p id="quote"><b>“Respect your elders and the world will respect you.”</b></p>
         <div id="goodjob">
-            <p id="apprec">Good job Rajesh! You just helped <span id="name">Rekha Shukla</span>.
+            <p id="apprec">Good job Rajesh! You just helped <span id="name">{{ name }}</span>.
             <br>
             <br>
             <b>You are truly appreciated.</b>
         </div>
         <div id="comments">
             <p id="apprec"><b>Their comments:</b></p>
-            <p id="comment">svjhskvs auhsiuvhsiuh vhs asvhsdvusdh avsdhvuhiuvh sdvd dsvs svjhskvs auhsiuvhsiuh vhsdvhsddvh asvhsdvusdh avsdhvuhiuvh sdvd dsvs svjhskvs auhsiuvhsiuh vhsdvhsddvh asvhsdvusdh avsdhvuhiuvh sdvd dsvs svjhskvs auhsiuvhsiuh vhsdvhsddvh asvhsdvusdh avsdhvuhiuvh sdvd dsvs svjhskvs auhsiuvhsiuh vhsdvhsddvh asvhsdvusdh avsdhvuhiuvh sdvd dsvs svjhskvs auhsiuvhsiuh vhsdvhsddvh asvhsdvusdh avsdhvuhiuvh sdvd dsvs</p>
+            <p id="comment">{{ comments }}</p>
         </div>
         <p id="youearned">You earned: <span id="pointsadded"><b>10</b></span></p>
         <img id="quoteimg" src="{% static 'BeaConnect/media/quoteimg.jpeg' %}" height="500" alt="Quote"/>

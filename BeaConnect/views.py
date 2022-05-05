@@ -28,6 +28,10 @@ def insert_request(request: HttpRequest) -> HttpResponse:
 	
 	return redirect(f'volunteer_details/{toadd.request_id}')
 
+@require_GET
+def appreciation(request: HttpRequest, request_id: int) -> HttpResponse:
+	return render("BeaConnect/appreciation.html")
+
 @require_POST
 def insert_feedback(request: HttpRequest) -> HttpResponse:
 	data = json.loads(request.body)
@@ -37,7 +41,7 @@ def insert_feedback(request: HttpRequest) -> HttpResponse:
 	vol.save()
 	try:
 		toadd = VolunteerReview(volunteer_id=user_req.volunteer, elderly_id=user_req.requester,
-		                        review_contents=data["feedback"], star_rating=3)
+		                        review_contents=data["feedback"], star_rating=int(data["stars"]))
 		toadd.save()
 	except ValueError:
 		return HttpResponseBadRequest("<h1>Invalid Data submitted</h1>")
@@ -157,5 +161,9 @@ def volunteer_home(request: HttpRequest) -> HttpResponse:
 	return render(request, "BeaConnect/volunteer_home.html", {"name": vln_usr.username, "score": vln.score})
 
 @require_GET
-def appreciation(request: HttpRequest) -> HttpResponse:
-	return render(request, "BeaConnect/appreciation.html")
+def appreciation(request: HttpRequest, request_id: int) -> HttpResponse:
+	user_req = Request.objects.get(request_id=request_id)
+	usr_feedback = VolunteerReview.objects.filter(volunteer_id=user_req.volunteer, elderly_id=user_req.requester).latest('surrogate_key')
+	elderly_user = User.objects.get(id=user_req.requester)
+	# TODO: feedback waiting page
+	return render(request, "BeaConnect/appreciation.html", {"name": elderly_user.username, "comments": usr_feedback.review_contents})

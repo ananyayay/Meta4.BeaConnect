@@ -24,6 +24,7 @@ urlpatterns = [
 	path('new_request', views.new_request_page),
 	
 	path('attend_to', views.attend_to),
+	path('appreciation', views.appreciation),
 	path('call_volunteer', views.call_volunteer),
 	path('elderly_details/<int:request_id>', views.elderly_details, name="elderly_details"),
 	path('elderly_home', views.elderly_home, name="elderly_home"),
@@ -33,5 +34,5 @@ urlpatterns = [
 	path('requests', views.requests),
 	path('volunteer_details/<int:request_id>', views.volunteer_details),
 	path('volunteer_home', views.volunteer_home),
-	path('appreciation', views.appreciation),
+	path('appreciation/<int:request_id>', views.appreciation),
 ]
