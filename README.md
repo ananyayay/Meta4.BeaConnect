@@ -8,7 +8,7 @@ Elderly Link - https://meta4beaconnect-production.up.railway.app/beaconnect/elde
 
 ## Paper Written
 
-https://drive.google.com/drive/u/2/my-drive
+Paper Link - https://drive.google.com/file/d/1ttqEITlnrYJf1kEBB_5ozh8Qe7_qbNVV/view
 
 ## Relevant Slides
 
